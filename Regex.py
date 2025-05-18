@@ -22,4 +22,7 @@ def extract_everything(text):
               print(f"- {match}")
       else:
           print("No matches found.")
-
+        
+if __name__ == "__main__":
+  text = read_text_file("sample_data.txt")
+  extract_all(text)
