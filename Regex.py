@@ -6,7 +6,9 @@ PATTERNS = {
   "urls": r'https?://[^\s]+',
   "phone_numbers": r'\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}',
   "credit_cards": r'\d{4}[-\s]?\d{4}[-\s]?\d{4}[-\s]?\d{4}',
-  "times": r'\b(?:[01]?\d|2[0-3]):[0-5]\d(?:\s?[APMapm]{2})?\b'
+  "times": r'\b(?:[01]?\d|2[0-3]):[0-5]\d(?:\s?[APMapm]{2})?\b',
+  "html_tags": r'<[^>]+>',
+  "currency_amounts": r'\$(?:\d{1,3}(?:,\d{3})+|\d{4,})(?:\.\d{2})?'
 }
 
 def read_text_file(filename):
@@ -25,4 +27,4 @@ def extract_everything(text):
         
 if __name__ == "__main__":
   text = read_text_file("sample_data.txt")
-  extract_all(text)
+  extract_everything(text)
