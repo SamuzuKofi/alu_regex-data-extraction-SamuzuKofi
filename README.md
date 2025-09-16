@@ -40,6 +40,6 @@ The results are printed to the console, grouped by pattern type.
 
 ### Customization
 
--   To extract data from a different file, replace the contents of ([`Sample_data.txt`](Sample_data.txt)) or modify the filename in Regex.py.
+-   To extract data from a different file, replace the contents of [`Sample_data.txt`](Sample_data.txt) or modify the filename in Regex.py.
 
 -   You can add or modify regex patterns in the PATTERNS dictionary in [`Regex.py`](Regex.py)to suit your needs.
